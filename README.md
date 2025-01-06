@@ -28,127 +28,33 @@ This project investigates crime patterns across London’s transportation networ
 ## Methods
 
 ### 1. Linear Regression
-Linear Regression
-Linear Regression was used to analyze how each transport mode contributes to the total number of crimes.
 
-Objective:
+Linear Regression was employed to analyze the relationship between total crimes and each transport mode.
 
-Predict TOTAL_CRIMES based on crimes for each transport mode.
-Process:
+#### Objective:
+To predict `TOTAL_CRIMES` based on crimes for individual transport modes.
 
-Each transport mode's crime count (independent variable) was regressed against TOTAL_CRIMES (dependent variable) individually.
-Ordinary Least Squares (OLS) Regression was performed using statsmodels.OLS.
-OLS Summary Report:
+#### Process:
+- Used **Ordinary Least Squares (OLS)** Regression for each mode (e.g., `BUS_CRIMES`, `UG-DLR_CRIMES`) against `TOTAL_CRIMES`.
+- Derived equations of the line:
+  \[
+  Y = \beta 0 + \beta 1 X
+  \]
+  - \( Y \): Predicted `TOTAL_CRIMES`.
+  - \( \beta_0 \): Intercept (constant term).
+  - \( \beta_1 \): Coefficient for the independent variable \( X \) (e.g., `BUS_CRIMES`).
 
-The equation of the line was derived for each mode as:
-
-𝑌
-=
-𝛽
-0
-+
-𝛽
-1
-𝑋
-Y=β 
-0
-​
- +β 
-1
-​
- X
-Where:
-
-𝑌
-Y: Predicted TOTAL_CRIMES.
-𝛽
-0
-β 
-0
-​
- : Intercept (constant term).
-𝛽
-1
-β 
-1
-​
- : Coefficient for the independent variable 
-𝑋
-X (e.g., BUS_CRIMES).
-Example (Underground/DLR Crimes):
-
-Equation: 
-𝑌
-=
-15.32
-+
-1.67
-𝑋
-Y=15.32+1.67X
-Interpretation: For every additional underground/DLR crime, total crimes increase by 1.67 on average.
-Metrics:
-
-R-squared: Indicates the strength of the relationship. For UG-DLR_CRIMES, 
-𝑅
-2
-=
-0.72
-R 
-2
- =0.72, showing a strong relationship.
-RMSE (Root Mean Squared Error): Measures prediction error. Lower values indicate better fit.
-Key Findings:
-
-Strongest relationship: Underground/DLR crimes (
-𝑅
-2
-=
-0.72
-,
-RMSE
-=
-302.76
-R 
-2
- =0.72,RMSE=302.76).
-Weakest relationship: Overground crimes (
-𝑅
-2
-=
-0.06
-,
-RMSE
-=
-558.88
-R 
-2
- =0.06,RMSE=558.88).
-Moderate relationship: Bus crimes (
-𝑅
-2
-=
-0.54
-R 
-2
- =0.54) and Tramlink crimes (
-𝑅
-2
-=
-0.30
-R 
-2
- =0.30).
-
-![image](https://github.com/user-attachments/assets/12ba8416-c4e2-4ceb-a257-f68bac033824)
-
-![image](https://github.com/user-attachments/assets/b139c0ef-700a-483b-92d7-6904ac2269a4)
-
+#### OLS Summary Report:
+- Example for **Underground/DLR Crimes**:
+  - Equation: \( Y = 15.32 + 1.67 X \)
+  - Metrics:
+    - **R-squared = 0.72**: Strong positive relationship.
+    - **RMSE = 302.76**: Low prediction error.
 
 #### Key Findings:
 - **Strongest relationship**: Underground/DLR crimes (\( R^2 = 0.72 \)).
 - **Weakest relationship**: Overground crimes (\( R^2 = 0.06 \)).
 - **Moderate relationship**: Bus crimes (\( R^2 = 0.54 \)) and Tramlink crimes (\( R^2 = 0.30 \)).
-
 ---
 
 ### 2. K-Means Clustering
