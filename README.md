@@ -50,6 +50,12 @@ To predict `TOTAL_CRIMES` based on crimes for individual transport modes.
   - Metrics:
     - **R-squared = 0.72**: Strong positive relationship.
     - **RMSE = 302.76**: Low prediction error.
+   
+    ![image](https://github.com/user-attachments/assets/53846b57-34ad-41d8-b0b4-b009ce46c55b)
+
+    ![image](https://github.com/user-attachments/assets/bca20fcb-6571-4fef-8edf-d42af16c691c)
+
+
 
 #### Key Findings:
 - **Strongest relationship**: Underground/DLR crimes (\( R^2 = 0.72 \)).
