@@ -92,10 +92,3 @@ To cluster transport modes into high and low-crime groups.
 This analysis highlights the potential of machine learning and statistical methods to improve public safety in urban transit systems.
 
 ---
-
-## How to Run
-1. Clone this repository.
-2. Ensure Python 3.x is installed.
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
