@@ -54,7 +54,7 @@ To predict `TOTAL_CRIMES` based on crimes for individual transport modes.
 #### Key Findings:
 - **Strongest relationship**: Underground/DLR crimes (\( R^2 = 0.72 \)).
 - **Weakest relationship**: Overground crimes (\( R^2 = 0.06 \)).
-- **Moderate relationship**: Bus crimes (\( R^2 = 0.54 \)) and Tramlink crimes (\( R^2 = 0.30 \)).
+- **Moderate relationship**: Bus crimes (\( R^2 = 0.54 \)), TFL Rail crimes (\( R^2 = 0.40 \)) and Tramlink crimes (\( R^2 = 0.30 \)).
 ---
 
 ### 2. K-Means Clustering
