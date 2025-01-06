@@ -51,6 +51,11 @@ To predict `TOTAL_CRIMES` based on crimes for individual transport modes.
     - **R-squared = 0.72**: Strong positive relationship.
     - **RMSE = 302.76**: Low prediction error.
 
+![image](https://github.com/user-attachments/assets/12ba8416-c4e2-4ceb-a257-f68bac033824)
+
+![image](https://github.com/user-attachments/assets/b139c0ef-700a-483b-92d7-6904ac2269a4)
+
+
 #### Key Findings:
 - **Strongest relationship**: Underground/DLR crimes (\( R^2 = 0.72 \)).
 - **Weakest relationship**: Overground crimes (\( R^2 = 0.06 \)).
@@ -69,13 +74,24 @@ To cluster transport modes into high and low-crime groups.
 1. **Elbow Method**:
    - Determined the optimal number of clusters (\( k=3 \)) by plotting the **Sum of Squared Errors (SSE)** for \( k=1 \) to \( 10 \).
    - The "elbow" in the curve indicated the best \( k \) value.
+
+  ![image](https://github.com/user-attachments/assets/b19773a5-521d-49cf-8274-0c2fcef1cfc0)
+
+    
 2. **Clustering**:
    - Features were scaled using `StandardScaler`.
    - K-Means was applied with \( k=3 \), resulting in:
      - **High-crime cluster**: Bus and Underground/DLR.
      - **Low-crime cluster**: Overground and Tramlink.
+    
+    
 3. **Visualization**:
    - Plots with centroids highlighted showed distinct high and low-crime clusters.
+
+
+    ![image](https://github.com/user-attachments/assets/622e22e0-acf6-41e7-851b-afc9e244a2f4)
+
+    ![image](https://github.com/user-attachments/assets/910f24fd-7812-4352-8731-9d9030233306)
 
 ---
 
