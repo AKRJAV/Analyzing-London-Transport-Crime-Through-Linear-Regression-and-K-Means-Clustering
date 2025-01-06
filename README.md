@@ -17,7 +17,7 @@ This project investigates crime patterns across London’s transportation networ
     - `OG_CRIMES` (Overground)
     - `TL_CRIMES` (Tramlink)
     - `TFL_RAIL_CRIMES` (TfL Rail)
-  - `TOTAL_CRIMES`: Aggregate crime count across all modes.
+  - `TOTAL_CRIMES`: Total crime count across all modes.
 - **Preprocessing**:
   - Handled missing values (e.g., null rows for `TFL_RAIL_CRIMES`).
   - Merged columns (e.g., `UG-DLR_CRIMES` for consistency across years).
