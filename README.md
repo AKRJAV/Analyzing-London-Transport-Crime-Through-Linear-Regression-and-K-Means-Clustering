@@ -46,7 +46,7 @@ To predict `TOTAL_CRIMES` based on crimes for individual transport modes.
 
 #### OLS Summary Report:
 - Example for **Underground/DLR Crimes**:
-  - Equation: \( Y = 15.32 + 1.67 X \)
+  - Equation: \( Y = 1.38x + 1204.09 \)
   - Metrics:
     - **R-squared = 0.72**: Strong positive relationship.
     - **RMSE = 302.76**: Low prediction error.
