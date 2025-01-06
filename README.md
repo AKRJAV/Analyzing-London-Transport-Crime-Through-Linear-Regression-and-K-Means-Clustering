@@ -38,11 +38,11 @@ To predict `TOTAL_CRIMES` based on crimes for individual transport modes.
 - Used **Ordinary Least Squares (OLS)** Regression for each mode (e.g., `BUS_CRIMES`, `UG-DLR_CRIMES`) against `TOTAL_CRIMES`.
 - Derived equations of the line:
   \[
-  Y = \beta_{0} + \beta_{1} X
+   Y = β₀ + β₁X
   \]
   - \( Y \): Predicted `TOTAL_CRIMES`.
-  - \( \beta_0 \): Intercept (constant term).
-  - \( \beta_1 \): Coefficient for the independent variable \( X \) (e.g., `BUS_CRIMES`).
+  - \( β₀ \): Intercept (constant term).
+  - \( β₁ \): Coefficient for the independent variable \( X \) (e.g., `BUS_CRIMES`).
 
 #### OLS Summary Report:
 - Example for **Underground/DLR Crimes**:
